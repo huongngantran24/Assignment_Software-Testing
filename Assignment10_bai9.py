@@ -33,8 +33,7 @@ dt.send_keys('20/7/2011')
 
 time.sleep(2)
 butt = driver.find_elements_by_xpath("/html/body/div/form/div/div[8]/a").click()
-#for x in self.driver.find_elements_by_link_text("Submit"):
-#link = driver.ActionChains(self.driver).move_to_element(x).click(x).perform()
+
 try:
     assert 'Formy' in driver.title
     print('Assertion test pass')
